@@ -2,8 +2,24 @@ ejb-annot
 =========
 
 This is a simple example of using Clojure’s new annotation features to generate
-EJBS.  You can compile it using leiningen.  Inorder to run the test, you must
-use `lein ejb-test` rather than `lein test`.
+EJBs.
+
+
+Running the tests
+-----------------
+
+As of version 0.2.0, ejb-annot is compiled using Maven.  In order to run the
+tests, run `mvn test`.  Note that this will create a lot of log messages.  On
+recent versions of the Oracle JDK, there will be a few stack traces, but these
+are safe to ignore. The key output you will be looking for will be:
+
+    Ran 2 tests containing 16 assertions.
+    0 failures, 0 errors.
+
+Alternatively, you can run `mvn jar:jar` to create the file
+`target/ejb-annot-0.2.0.jar`, which you should be able to drop into any EJB
+container.
+
 
 License
 -------
