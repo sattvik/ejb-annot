@@ -8,23 +8,23 @@
 ;
 ; Written by Daniel Solano Gómez
 
-(ns #^{:doc "An implementation of the simple stateless session bean example 
-            from OpenEJB.
-            
-            http://openejb.apache.org/3.0/simple-stateless-example.html"
+(ns ^{:doc "An implementation of the simple stateless session bean example
+           from OpenEJB.
+
+           http://openejb.apache.org/3.0/simple-stateless-example.html"
        :author "Daniel Solano Gómez"}
   ejb.stateless
   (:import [javax.ejb Remote Stateless]))
 
 (definterface CalculatorLocal
-  (#^int sum [#^int add1, #^int add2])
-  (#^int multiply [#^int mult1, #^int mult2]))
+  (^int sum [^int add1, ^int add2])
+  (^int multiply [^int mult1, ^int mult2]))
 
-(definterface #^{Remote {}} CalculatorRemote
-  (#^int sum [#^int add1, #^int add2])
-  (#^int multiply [#^int mult1, #^int mult2]))
+(definterface ^{Remote {}} CalculatorRemote
+  (^int sum [^int add1, ^int add2])
+  (^int multiply [^int mult1, ^int mult2]))
 
-(deftype #^{Stateless {}} CalculatorImpl []
+(deftype ^{Stateless {}} CalculatorImpl []
   CalculatorLocal
   CalculatorRemote
   (sum [this add1 add2]
