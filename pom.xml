@@ -15,7 +15,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ejb-annot</groupId>
   <artifactId>ejb-annot</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.2.0</version>
 
   <name>ejb-annot</name>
   <description>
@@ -23,6 +23,7 @@
     to create EJBs.
   </description>
   <url>http://github.com/sattvik/ejb-annot</url>
+  <inceptionYear>2010</inceptionYear>
 
   <packaging>clojure</packaging>
 
@@ -40,8 +41,24 @@
       <name>Daniel Solano Gómez</name>
       <email>dan@solanogomez.org</email>
       <url>http://www.deepbluelambda.org</url>
+      <organization>Sattvik Software &amp; Technology Resources, Ltd. Co.</organization>
     </developer>
   </developers>
+
+  <organization>
+    <name>Sattvik Software &amp; Technology Resources, Ltd. Co.</name>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>Gnu Lesser General Public License 3.0</name>
+      <url>http://www.gnu.org/licenses/lgpl.html</url>
+    </license>
+    <license>
+      <name>Eclipse Public License 1.0</name>
+      <url>http://www.eclipse.org/legal/epl-v10.html</url>
+    </license>
+  </licenses>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -81,25 +98,4 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
-  <!--
-  <repositories>
-    <repository>
-      <id>central</id>
-      <url>http://repo1.maven.org/maven2</url>
-    </repository>
-    <repository>
-      <id>clojure</id>
-      <url>http://build.clojure.org/releases</url>
-    </repository>
-    <repository>
-      <id>clojure-snapshots</id>
-      <url>http://build.clojure.org/snapshots</url>
-    </repository>
-    <repository>
-      <id>clojars</id>
-      <url>http://clojars.org/repo/</url>
-    </repository>
-  </repositories>
-  -->
 </project>
